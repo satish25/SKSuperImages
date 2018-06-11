@@ -1,0 +1,6 @@
+framework module SKSuperImages {
+  umbrella header "SKSuperImages-umbrella.h"
+
+  export *
+  module * { export * }
+}
