@@ -14,9 +14,9 @@
 		46DC8C7AE3E6059DDBF8C04FBC9A4B60 /* SKSuperImages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9FBEA2BC4795EE5BC334AAB79A03A /* SKSuperImages-dummy.m */; };
 		A0213EBA4D8FE7C458349256D89E84A0 /* SKSuperImages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53328F1C7EA6F0EF4D1644DFFA479797 /* SKSuperImages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD2319314EED5BF2BC29B83E54BDE22F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B20B98F820CEFAB200121AC9 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B98F720CEFAB200121AC9 /* UIImageViewExtensions.swift */; };
 		D73523B0F4D17A8837D8A6BB3C2F3700 /* Pods-SKSuperImages_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D284C55431C8F4FFDD78F65E3012B58A /* Pods-SKSuperImages_Example-dummy.m */; };
 		DEA4D857AB2A49250B0EA1C2779F1043 /* Pods-SKSuperImages_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13BDD22AFC3F087864572AAAE146A98 /* Pods-SKSuperImages_Tests-dummy.m */; };
-		E47ABAF73AA9A4D0AB3183810BCCF8FA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B75DD7FBB463AD47916CC941C4858 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97B6B5DE645A4259483AE4882A993671 /* Pods-SKSuperImages_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKSuperImages_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9B083F858C91E4A378BF151184711BB8 /* Pods-SKSuperImages_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKSuperImages_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AE0B75DD7FBB463AD47916CC941C4858 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SKSuperImages/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		B20B98F720CEFAB200121AC9 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = SKSuperImages/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		BA57F91E58269CA4F955142891B7CE18 /* Pods-SKSuperImages_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKSuperImages_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BB45ADEA2CAD84852592E4047FDC5C35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53D949087279E1B7556E7D9932A06C2 /* Pods-SKSuperImages_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKSuperImages_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -184,9 +184,9 @@
 		B2AA2B1794FCBAC26F427194DE119B53 /* SKSuperImages */ = {
 			isa = PBXGroup;
 			children = (
-				AE0B75DD7FBB463AD47916CC941C4858 /* ReplaceMe.swift */,
 				2EB32A9DCF8F864D05ED0E7BEF79C335 /* Pod */,
 				501D063B2610D88F3EB6FC846AAA1063 /* Support Files */,
+				B20B98F720CEFAB200121AC9 /* UIImageViewExtensions.swift */,
 			);
 			name = SKSuperImages;
 			path = ../..;
@@ -318,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					0CB8663D743349604C3D5051DD1997D4 = {
+						LastSwiftMigration = 0930;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E47ABAF73AA9A4D0AB3183810BCCF8FA /* ReplaceMe.swift in Sources */,
+				B20B98F820CEFAB200121AC9 /* UIImageViewExtensions.swift in Sources */,
 				46DC8C7AE3E6059DDBF8C04FBC9A4B60 /* SKSuperImages-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30E1DBF0D851E95EE884E7511A7C36E8 /* SKSuperImages.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -486,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30E1DBF0D851E95EE884E7511A7C36E8 /* SKSuperImages.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

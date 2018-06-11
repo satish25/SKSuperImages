@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    "SKSuperImage is a Cocoapod that extends the UIimageView class with a convenience method of rounding an image view with a specific border and width"
                        DESC
 
-  s.homepage         = 'https://github.com/Satish Ashwath/SKSuperImages'
+  s.homepage         = 'https://github.com/satish25/SKSuperImages'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Satish Ashwath' => 'v-sashwath@funko.com' }
-  s.source           = { :git => 'https://github.com/Satish Ashwath/SKSuperImages.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/satish25/SKSuperImages.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/satish0225<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
