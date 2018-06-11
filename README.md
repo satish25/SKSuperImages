@@ -1,6 +1,6 @@
 # SKSuperImages
 
-[![CI Status](https://img.shields.io/travis/Satish Ashwath/SKSuperImages.svg?style=flat)](https://travis-ci.org/Satish Ashwath/SKSuperImages)
+Extension of the UIImageView Swift class
 [![Version](https://img.shields.io/cocoapods/v/SKSuperImages.svg?style=flat)](https://cocoapods.org/pods/SKSuperImages)
 [![License](https://img.shields.io/cocoapods/l/SKSuperImages.svg?style=flat)](https://cocoapods.org/pods/SKSuperImages)
 [![Platform](https://img.shields.io/cocoapods/p/SKSuperImages.svg?style=flat)](https://cocoapods.org/pods/SKSuperImages)
@@ -22,7 +22,7 @@ pod 'SKSuperImages'
 
 ## Author
 
-Satish Ashwath, v-sashwath@funko.com
+Satish Ashwath, satishios25@gmail.com
 
 ## License
 
